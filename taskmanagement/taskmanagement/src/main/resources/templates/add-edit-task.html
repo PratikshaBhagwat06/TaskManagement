@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add/Edit Task</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Add/Edit Task</h1>
+    <form th:object="${task}" th:action="@{/savetask}" method="post">
+        <input type="hidden" th:field="*{id}">
+        <label>Description:</label>
+        <input type="text" th:field="*{description}">
+        <label>Assigner:</label>
+        <input type="text" th:field="*{assigner}">
+        <label>Assignee:</label>
+        <input type="text" th:field="*{assignee}">
+        <label>Assigned Date Time:</label>
+        <input type="text" th:field="*{assignedDateTime}">
+        <label>Expected Completion Date Time:</label>
+        <input type="text" th:field="*{expectedCompletionDateTime}">
+        <input type="submit" value="Save">
+    </form>
+</body>
+</html>

@@ -1,0 +1,12 @@
+com\taskmanagement\taskmanagement\services\TaskServiceImpl.class
+com\taskmanagement\taskmanagement\repostories\UserRepository.class
+com\taskmanagement\taskmanagement\TaskmanagementApplication.class
+com\taskmanagement\taskmanagement\entities\User.class
+com\taskmanagement\taskmanagement\services\TaskService.class
+com\taskmanagement\taskmanagement\controllers\AuthController.class
+com\taskmanagement\taskmanagement\services\UserServiceImpl.class
+com\taskmanagement\taskmanagement\controllers\TaskController.class
+com\taskmanagement\taskmanagement\entities\Task.class
+com\taskmanagement\taskmanagement\controllers\UserController.class
+com\taskmanagement\taskmanagement\services\UserService.class
+com\taskmanagement\taskmanagement\repostories\TaskRepository.class
