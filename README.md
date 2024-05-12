@@ -1,6 +1,6 @@
 Database used -mysql
 
-technology used-java springboot(frontend files are in src/main/rsources folder)
+technology used-java springboot(frontend files are in src/main/resources folder)
 # Task Management API Reference
 
 ## Login API:
