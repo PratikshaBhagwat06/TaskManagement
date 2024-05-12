@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Details</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        h1, h2, p {
+            margin: 10px 0;
+        }
+        div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML content -->
+    <h1>Task Details</h1>
+    <div>
+        <h2>Description: <span th:text="${task.description}"></span></h2>
+        <p>Assigner: <span th:text="${task.assigner}"></span></p>
+        <p>Assignee: <span th:text="${task.assignee}"></span></p>
+        <p>Assigned Date Time: <span th:text="${task.assignedDateTime}"></span></p>
+        <p>Expected Completion Date Time: <span th:text="${task.expectedCompletionDateTime}"></span></p>
+        <!-- Add more details here as needed -->
+    </div>
+</body>
+</html>
